@@ -1,0 +1,161 @@
+@mixin m374 {
+    @media screen and (max-width: 374px) {
+        @content;
+    }
+}
+
+@mixin m479 {
+    @media screen and (max-width: 479px) {
+        @content;
+    }
+}
+
+@mixin m767 {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin iPhone4{
+    @media screen and (max-height: 480px) {
+        @content;
+    }
+}
+
+@mixin m768 {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin m991 {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin m1024 {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin m1025 {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin m1366 {
+    @media screen and (min-width: 1366px) {
+        @content;
+    }
+}
+
+@mixin mh729 {
+    @media screen and (min-width: 1200px) and (max-height: 729px) {
+        @content;
+    }
+}
+
+//font-size
+@mixin fs($size) {
+    font-size: $size;
+    @include m768 {
+        font-size: ( $size / 1px ) * (100vw / 1366);
+    }
+    @include m1366 {
+        font-size: $size;
+    }
+}
+
+//width sur 1600 de large
+@mixin wthLarge($width) {
+    width: ( $width / 1px ) * (100vw / 1366);
+    @include m1366 {
+        width: $width;
+    }
+}
+
+//min- width sur 1600 de large
+@mixin minWthLarge($minWidth) {
+    min-width: ( $minWidth / 1px ) * (100vw / 1366);
+    @include m1366 {
+        width: $minWidth;
+    }
+}
+
+//height sur 1600 de large
+@mixin hghtLarge($height) {
+    height: ( $height / 1px ) * (100vw / 1366);
+    @include m1366 {
+        height: $height;
+    }
+}
+//height sur 1600 de large
+@mixin minHghtLarge($height) {
+    min-height: ( $height / 1px ) * (100vw / 1366);
+    @include m1366 {
+        min-height: $height;
+    }
+}
+
+// PADDING
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: ( $top / 1px ) * (100vw / 1366);
+    padding-right: ( $right / 1px ) * (100vw / 1366);
+    padding-bottom: ( $bottom / 1px ) * (100vw / 1366);
+    padding-left: ( $bottom / 1px ) * (100vw / 1366);
+
+    @include m1366 {
+        padding: $top $right $bottom $left;
+    }
+}
+
+// MARGIN
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: ( $top / 1px ) * (100vw / 1366);
+    margin-right: ( $right / 1px ) * (100vw / 1366);
+    margin-bottom: ( $bottom / 1px ) * (100vw / 1366);
+    margin-left: ( $bottom / 1px ) * (100vw / 1366);
+
+    @include m1366 {
+        margin: $top $right $bottom $left;
+    }
+}
+
+// add multibrowsers animation prefixers --------
+@mixin animation($content) {
+    -webkit-animation: #{$content};
+    -moz-animation: #{$content};
+    -ms-animation: #{$content};
+    -o-animation: #{$content};
+    animation: #{$content};
+}
+
+// add multibrowsers transition prefixers -------
+@mixin transition($content) {
+    -webkit-transition: #{$content};
+    -moz-transition: #{$content};
+    -ms-transition: #{$content};
+    -o-transition: #{$content};
+    transition: #{$content};
+}
+
+// add multibrowsers transform prefixers -------
+@mixin transform($content) {
+    -webkit-transform: #{$content};
+    -moz-transform: #{$content};
+    -ms-transform: #{$content};
+    -o-transform: #{$content};
+    transform: #{$content};
+}
+
+// CENTER POSITION ABSOLUTE
+@mixin centerAbsolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

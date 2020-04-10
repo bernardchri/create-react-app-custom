@@ -1,0 +1,58 @@
+{	
+	"accessibility": {
+		"fr": "Accessibilté",
+		"en": "Accessibility"
+	},
+	"loading": {
+		"fr": "Chargement…",
+		"en:": "Loading…"
+	},
+	"noevents": {
+		"fr": "Pas d'évenements",
+		"en": "no events"
+	},
+	"seeevents":{
+		"fr": "Voir tout l'agenda",
+		"en":"See more events"
+	},
+	"noresult": {
+		"fr": "Pas de résultat",
+		"en": "No results"
+	},
+	"nocontact": {
+		"fr": "Pas de contacts",
+		"en": "no contacts"
+	},
+	"seemore": {
+		"fr": "Voir plus",
+		"en": "See more"
+	},
+	"filter": {
+		"fr": "Filtrer",
+		"en": "Filter"
+	},
+	"backToStart": {
+		"fr": "Retour à l'accueil",
+		"en": "back to start page"
+	},
+	"404message": {
+		"fr": "la page que vous cherchez semble introuvable.",
+		"en": "page not found"
+	},
+	"404error": {
+		"fr": "code d'erreur 404",
+		"en": "error message 404"
+	},
+	"searchResultTitle": {
+		"fr": "Voici votre résultat de recherche",
+		"en": "Voilà ! Your search result"
+	},
+	"searchResultResultats": {
+		"fr": "résultats",
+		"en": "result"
+	},
+	"searchResultNoResults": {
+		"fr": "Malheureusement elle n’a pas aboutie…",
+		"en": "Sorry, no results"
+	}
+}
