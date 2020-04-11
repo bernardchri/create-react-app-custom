@@ -1,0 +1,58 @@
+{
+	"data": [
+		{
+			"path": "/",
+			"exact": true,
+			"_uid": "home-a3688ea7d29be",
+			"component": "Template Home"
+		},
+		{
+			"path": "/recherche",
+			"path_en": "/search",
+			"exact": true,
+			"_uid": "search-1b5d6b3c499effe19",
+			"component": "Template Search"
+		},
+		{
+			"path": "/search",
+			"path_fr": "/recherche",
+			"exact": true,
+			"_uid": "search-1b5d6b3c49919",
+			"component": "Template Search"
+		},
+		{
+			"path": "/article",
+			"path_en": "/article-en",
+			"exact": true,
+			"_uid": "page-270-d5bba7da36fde",
+			"component": "Template Article"
+		},
+		{
+			"path": "/article-en",
+			"path_fr": "/article",
+			"exact": true,
+			"_uid": "page-270-d5bba7da331316fde",
+			"component": "Template Article"
+		},
+		{
+			"path": "/rubrique",
+			"path_en": "/rub",
+			"exact": true,
+			"_uid": "page-270-d39409300",
+			"component": "Template Rubrique"
+		},
+		{
+			"path": "/rub",
+			"path_fr": "/rubrique",
+			"exact": true,
+			"_uid": "page-270-d5bba7da33139de",
+			"component": "Template Rubrique"
+		},
+		{
+			"path": "/*",
+			"exact": true,
+			"_uid": "404-96e81de5be31b",
+			"component": "Template 404"
+		}
+	]
+}

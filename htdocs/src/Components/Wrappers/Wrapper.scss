@@ -1,0 +1,17 @@
+@import "../../Styles/usefull/mixins.scss";
+
+.Wrapper {
+	width: calc(100% - 60px);
+	margin: auto;
+	outline: 1px dotted;
+
+	@include m1024 {
+		width: calc(100% - 42px);
+	}
+
+	@include m1366 {
+		width: 100%;
+		max-width: 1280px;
+	}
+	
+}

@@ -1,0 +1,21 @@
+{	
+	"title" : "Mon site",
+	"nav": [
+		{
+			"name": "Page d'accueil",
+			"url": "/"
+		},
+		{
+			"name": "Article",
+			"url": "/article"
+		},
+		{
+			"name": "Rubrique",
+			"url": "/rubrique"
+		},
+		{
+			"name": "Recherche",
+			"url": "/recherche"
+		}
+	]
+}

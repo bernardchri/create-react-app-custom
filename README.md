@@ -4,7 +4,7 @@ custom create-react-app
 
 
 ```
-npm install create-react-app htdocs
+npx create-react-app htdocs
 cd htdocs
 npm install react-router-dom axios node-sass env-cmd react-app-polyfill eslint-plugin-react-hooks
 touch .env .env_sample .gitignore
