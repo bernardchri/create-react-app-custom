@@ -11,7 +11,6 @@ function App() {
   const dataRoutes = require('../Routes/RoutesLocal.json');
   const dataHeader = require('../Header/Header.json');
 
-  console.log(dataHeader)
   return (
     <div className="App">
       <AppContext.Provider value={AppContext}>
