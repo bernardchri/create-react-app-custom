@@ -10,8 +10,8 @@
 		{
 			"component" : "Quote",
 			"datas" : {
-				"text" : "Le courage n'est pas l'absence de peur, mais la capacité de vaincre ce qui fait peur.",
-				"subtitle" : "Nelson Mandela"
+				"name" : "Le courage n'est pas l'absence de peur, mais la capacité de vaincre ce qui fait peur.",
+				"description" : "Nelson Mandela"
 			}
 		}
 	]
