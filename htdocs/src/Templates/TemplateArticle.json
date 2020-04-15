@@ -1,0 +1,19 @@
+{
+	"flexibles" : [
+		{
+			"component" : "Introduction",
+			"datas" : {
+				"title" : "Introduction titre",
+				"text" : "Introduction text - lorem ipsum…"
+			}
+		},
+		{
+			"component" : "Quote",
+			"datas" : {
+				"text" : "Le courage n'est pas l'absence de peur, mais la capacité de vaincre ce qui fait peur.",
+				"subtitle" : "Nelson Mandela"
+			}
+		}
+	]
+}
+

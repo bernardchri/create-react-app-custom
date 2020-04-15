@@ -28,7 +28,6 @@ function App() {
             <Footer/>
         </ScrollToTop>
         </Router>
-      
       </AppContext.Provider>
     </div>
   );
