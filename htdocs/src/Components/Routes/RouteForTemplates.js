@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext}  from "react";
-import { Route, useHistory, useLocation } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { AppContext } from "../../Context/AppContext";
 
 // templates
@@ -29,19 +29,14 @@ export function RouteForTemplates(route) {
 	const [path, setPath] = useState(route.path);
 	let lang = useContext(AppContext).lang;
 
-	let history = useHistory();
-	let search = useLocation().search; // si recherche type http://monurl.com/recherche?=texte
-	let hash = useLocation().hash // si recherche avec # dans l'url
 	
 	useEffect(()=>{
 		
 		switch(lang){
 			case 'fr': 
-				history.push({pathname : route.path_fr, search, hash})
 				setPath(route.path_fr)
 			break;
 			case 'en': 
-				history.push({pathname : route.path_en, search, hash}) 
 				setPath(route.path_en);
 			break;
 			default:
@@ -49,7 +44,7 @@ export function RouteForTemplates(route) {
 			break;
 		}
 		
-	},[lang, history, route.path_fr, route.path, route.path_en, search, hash])
+	},[lang, route.path_fr, route.path, route.path_en])
 
 	return (
 		<Route
