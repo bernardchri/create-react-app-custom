@@ -18,11 +18,18 @@ import { withRouter } from 'react-router-dom';
 function ScrollToTop({ history, children }) {
  
   useEffect(() => {
-    const unlisten = history.listen(() => {
-      window.scrollTo(0, 0);
-      // console.log("history")
+    let gotTop;
+
+    let unlisten = history.listen(() => {
+      // console.log("history", history)
+      gotTop = setTimeout(()=>{
+        window.scrollTo(0, 0);
+      }, 10)
+
     });
+
     return () => {
+      clearTimeout(gotTop);
       unlisten();
     }
   }, [history]);
