@@ -2,6 +2,57 @@
 custom create-react-app 
 
 
+L'idée de ce starter kit est de mettre en place une première structure simple adaptée à des sites web ( notamment à base d'api générées par Wordpress).
+
+---
+
+## Qu'est ce qu'il gère ? 
+	
+### le rooting vers les templates 
+
+Fichier **RouteForTemplate.js**, déclarer et importer les composants. La clé correspond au nom du composant dans les APIs.
+
+	/**
+	* @description à modifier suivant les projets
+	*/
+	const DynamicTemplate = {
+		'Template 404': Template404,
+		'Template Home': TemplateHome,
+		'Template Article': TemplateArticle,
+		'Template Rubrique': TemplateRubrique,
+		'Template Search': TemplateSearch,
+	};
+
+### L'utilisation de flexibles ( blocs répéteurs pour des pages articles )
+
+Fichier : **ComponentFromJSON.js**, déclarer et importer les composants. La clé correspond au nom du composant dans les APIs.
+
+	/**
+	* Déclaration de la corresspondance nom reçu / nom du composant
+	* 
+	*/
+	const DynamicComponents = {
+		"Introduction": Introduction,
+		"Quote": Quote
+	}
+
+### Utilisation d'un context
+
+Fichier : **AppContext.js**, permet de créer un context global au site, (on peut utiliser celui ci pour gérer les mutlilangues)
+
+
+### Appel des Apis
+
+Fichier : **useApi.js**, s'utilise comme un hook pour récupérer les données des apis. Dans votre templates, ou composant appeler comme ceci : 
+
+	let [ datas, isLoaded ] = useApi({nom:"nomDeMonAPI", _uid: "39300393" })
+
+
+
+
+---
+
+## Installation
 
 ```
 npx create-react-app htdocs
