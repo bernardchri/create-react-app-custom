@@ -131,3 +131,10 @@ Fichier : **useApi.js**, s'utilise comme un hook pour récupérer les données d
 	let [ datas, isLoaded ] = useApi({nom:"nomDeMonAPI", _uid: "39300393" })
 
 ---
+
+
+### TO DO
+
+ - Installer de Base REDUX pour remplacer le context ( et faire un store avec un reducer lang)
+ - Installer par défaut un polyfill pour gérer les intersections observeurs
+
