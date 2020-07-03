@@ -137,4 +137,5 @@ Fichier : **useApi.js**, s'utilise comme un hook pour récupérer les données d
 
  - Installer de Base REDUX pour remplacer le context ( et faire un store avec un reducer lang)
  - Installer par défaut un polyfill pour gérer les intersections observeurs
+ - Faire en sorte de mettre un parametre qui permet de travailler sur une api "static" au début de projet avant de taper dans les apis distantes ( piste : useAPI et configurer .env)
 
